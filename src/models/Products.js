@@ -5,11 +5,10 @@ const ProductSchema = new mongoose.Schema({
     price: String,
     trademark: String,
     stock: Number,
-}
-    {
-        timestamps: true
-    }
-)
+    image: String,
+    category: String,
+    tags: String,
+})
 
 const Product = mongoose.models.Product || mongoose.model('Product', ProductSchema)
 

@@ -1,17 +1,17 @@
 import React from 'react'
-import { Grid, Flex, Text } from '@chakra-ui/react'
+import { Grid, Flex, Text, useTheme } from '@chakra-ui/react'
 
-const result = {
 
-}
 
 const Sidebar = () => {
+  const theme = useTheme()
+
   return (
     <>
         <Grid
             w='25vw'
-            h='100vh'
-            bg='#dedede'
+            h='auto'
+            bg={theme.colors.secondary}
         >
             <Text justifySelf={'center'}>Categorias</Text>
         </Grid>
