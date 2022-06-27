@@ -10,6 +10,9 @@ import {
 } from "@chakra-ui/react";
 import NavMenu from "../components/NavMenu";
 import { BsPhoneFill } from "react-icons/bs";
+import Link from 'next/link'
+
+
 const Navbar = () => {
   const theme = useTheme();
 
@@ -27,7 +30,7 @@ const Navbar = () => {
         <Icon as={BsPhoneFill} alignSelf='center' fontSize='6xl'/>
         <NavMenu />
         <Grid autoFlow="column" gap="2vw" ml="2vw" w="10vw" alignItems='center'>
-          <Button>Login</Button>
+          <Link href='/login'><Button onClick>Login</Button></Link>
         </Grid>
       </Flex>
     </>
